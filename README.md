@@ -1,7 +1,9 @@
 # Introduction
 
-This is an unofficial inplementation of [Bird's Eye View Object Detection Algorithm for self-driving Cars] [PIXOR](http://openaccess.thecvf.com/content_cvpr_2018/CameraReady/3012.pdf) in Pytorch. A large part of this project is based on the work [here](https://github.com/ankita-kalra/PIXOR). Thanks to [@Ankita Kalra](https://github.com/ankita-kalra). This work is still ongoing.
+This is an unofficial inplementation of [Bird's Eye View Object Detection Algorithm for self-driving Cars] [PIXOR](http://openaccess.thecvf.com/content_cvpr_2018/CameraReady/3012.pdf) in Pytorch. A large part of this project is based on the work [here](https://github.com/ankita-kalra/PIXOR). Thanks to [@Ankita Kalra](https://github.com/ankita-kalra). This work is still ongoing.Origin project is based on the work [here](https://github.com/philip-huang/PIXOR).Thanks to [@philip-huang](https://github.com/philip-huang).
 
+# Handling colored points clouds
+https://github.com/overfitover/pixor_ovo
 # Dependencies
 - `python3.5+`
 - `Pytorch` (tested on 0.4.1)
@@ -52,7 +54,7 @@ $ python run_training.py
 ```bash
 $ python run_inference.py
 ```
-**by the way**　在ｍｏｄｅｌ里面有７层ｓｅ_module,你可以尝试不同的组合是否可以提升网络的效果。
+**by the way**　在model里面有７层se_module,你可以尝试不同的组合是否可以提升网络的效果。
 
 # results
 ## GT
@@ -63,8 +65,8 @@ $ python run_inference.py
 ![ se_module](./picture_results/predict_ce_module.png)
 
 # TODO
-- [ ] datagen.py maybe has a problem. h w l x y z   w h l y z x.
-- [ ] improve the performances
+- [X] datagen.py maybe has a problem. h w l x y z   w h l y z x.
+- [X] improve the performances
 - [ ] reproduce results for `Pedestrian` and `Cyclist`
-- [ ] provide SummaryWriter()
+- [X] provide SummaryWriter()
 - [ ] provide run_evaluate.py
